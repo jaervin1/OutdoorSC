@@ -2,7 +2,7 @@ import "./css/Home.css";
 import Tree from "../components/Tree";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-function App() {
+function Home() {
   return (
     <>
       <section className="columns">
@@ -19,4 +19,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

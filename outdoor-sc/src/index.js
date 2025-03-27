@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import {Layout} from './Layout';
+import Layout from './Layout';
 import './index.css';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -10,7 +10,7 @@ import Nopage from './pages/Nopage';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
      <Routes>
       <Route path='/' element={<Layout/>}></Route>
       <Route path='home' element={<Home/>}></Route>
