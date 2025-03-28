@@ -1,9 +1,13 @@
 import "./css/Header.css"
+import Navigation from "./Navigation";
 
 function Header() {
   return (
     <header>
-    <h1>Title of Site</h1>
+    <div id="header-content">
+    <h1>OutdoorSC</h1>
+    <Navigation />
+    </div>
   </header>
   )
 };

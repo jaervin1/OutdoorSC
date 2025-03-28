@@ -5,19 +5,20 @@ import Layout from './Layout';
 import './index.css';
 import Home from './pages/Home';
 import About from './pages/About';
-import Blog from './pages/Blog';
+import Profile from './pages/Profile';
 import Nopage from './pages/Nopage';
 
 function App() {
-  return (
+  return(
     <BrowserRouter basename={process.env.PUBLIC_URL}>
-     <Routes>
-      <Route path='/' element={<Layout/>}></Route>
-      <Route path='home' element={<Home/>}></Route>
-      <Route path='about' element={<About/>}></Route>
-      <Route path='blog' element={<Blog/>}></Route>
-      <Route path='*' element={<Nopage/>}></Route>
-     </Routes>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="profile" element={<Profile />} />
+          <Route path="*" element={<Nopage/>} />
+        </Route>
+      </Routes>
     </BrowserRouter>
   );
 };
