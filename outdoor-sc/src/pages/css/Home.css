@@ -21,3 +21,68 @@ body {
   margin-bottom: 20px;
   background-color: var(--page-background);
 }
+
+#header-content h1 {  
+  color: var(--secondary);
+  margin: 10px 0;
+  font-size: 4ch;
+}
+
+a { 
+  text-decoration: none; 
+  color: #000000; 
+}
+
+a:hover { 
+  background-color: var(--secondary); 
+}
+
+h1, h2, h3, h4 { 
+  color: var(--header-color); 
+}
+
+main { 
+  max-width: 90%; 
+  margin: 15px auto; 
+}
+
+.content { 
+  background-color: var(--content-background); 
+  border-radius: 5px; 
+  margin-bottom: 20px; 
+}
+
+.content h2 { 
+  max-width: 85%; 
+  margin: 10px auto; 
+  padding: 10px; 
+}
+
+.featured img, .recommended img { 
+  display: block; 
+  margin: 0 auto; 
+  width: 70%; 
+  height: auto; 
+}
+
+.featured a h2 { 
+  padding: 5px; 
+}
+
+.recommended div { 
+  width: 90%; 
+  height: auto; 
+  margin: 0 auto; 
+  justify-content: space-between; 
+}
+
+.recommended .columns section { 
+  flex: 1; 
+  margin: 0 5px; 
+}
+
+.columns { 
+  display: flex; 
+  flex: 1;
+}
+
