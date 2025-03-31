@@ -1,6 +1,7 @@
 import "./css/Explore.css";
 import { FaPlusCircle, FaMapMarker, FaArrowLeft } from "react-icons/fa";
 import { useState } from "react";
+import ActivityCard from "../components/ActivityCard";
 
 
 
@@ -19,12 +20,18 @@ function Explore() {
                 <FaMapMarker color="#344e41" />
             </section>
 
+
             <section class="filters">
                 <button>Distance</button>
                 <button>Rating (stars)</button>
                 <button>Difficulty</button>
                 <button>Activity Type</button>
                 <button onClick={openModal}> <FaPlusCircle /> Add Activity </button>
+            </section>
+
+            <section className="explore">
+                <ActivityCard name="Boardwalk Loop" description="Scenic walk through one of the most unique biospheres in the state." images = {["trail-two.jpg", "trail-three.jgp"]}></ActivityCard>
+                
             </section>
 
             {isModalOpen && (
