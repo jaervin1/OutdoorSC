@@ -1,0 +1,51 @@
+#aboutus{
+    background-color: var(--content-background-two);
+    padding: 10px;
+    border-radius: 10px;
+    padding-left: 20px;
+  }
+  
+  #aboutus-gallery{
+    text-align: center;
+  }
+  
+  #aboutus-gallery img{
+    max-width: 75%;
+    height: auto;
+    margin-top: 10px;
+    border: solid 3px var(--header-color);
+  }
+  
+  #aboutus p{
+    font-size: x-large;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  
+  #aboutus h2{
+    font-size: 5ch;
+    text-align: center;
+  }
+  
+  #aboutus hr{
+    margin: 30px 0px;
+  }
+  
+  .social-list {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-list li a {
+    display: block; 
+    padding: 10px; 
+    font-size: 20px; 
+    color: var(--primary);
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  

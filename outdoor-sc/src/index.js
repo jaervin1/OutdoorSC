@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Profile from './pages/Profile';
 import Nopage from './pages/Nopage';
+import Explore from './pages/Explore';
 
 function App() {
   return(
@@ -16,6 +17,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="profile" element={<Profile />} />
+          <Route path="explore" element={<Explore />} />
           <Route path="*" element={<Nopage/>} />
         </Route>
       </Routes>

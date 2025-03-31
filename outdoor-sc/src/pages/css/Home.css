@@ -22,9 +22,11 @@ body {
   background-color: var(--page-background);
 }
 
+
+
 #header-content h1 {  
   color: var(--secondary);
-  margin: 10px 0;
+  margin: 5px 0;
   font-size: 4ch;
 }
 
@@ -41,6 +43,10 @@ h1, h2, h3, h4 {
   color: var(--header-color); 
 }
 
+hr {
+  color: var(--header-color);
+}
+
 main { 
   max-width: 90%; 
   margin: 15px auto; 
@@ -52,10 +58,16 @@ main {
   margin-bottom: 20px; 
 }
 
-.content h2 { 
+.content h2, .content h1 { 
   max-width: 85%; 
   margin: 10px auto; 
   padding: 10px; 
+}
+
+.content p {
+  max-width: 85%;
+  margin: 5px auto;
+  padding-bottom: 10px;
 }
 
 .featured img, .recommended img { 
@@ -63,6 +75,7 @@ main {
   margin: 0 auto; 
   width: 70%; 
   height: auto; 
+  border-radius: 5px;
 }
 
 .featured a h2 { 
@@ -84,5 +97,12 @@ main {
 .columns { 
   display: flex; 
   flex: 1;
+}
+
+@media (min-width: 850px) {
+  main {
+    max-width: 80%;
+    margin: 15px auto;
+  }
 }
 
