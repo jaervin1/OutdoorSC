@@ -2,6 +2,7 @@
   display: flex;
   padding: 0px;
   margin: 0;
+  flex-direction: column;
 }
 
 #main-nav li {
@@ -47,6 +48,10 @@
   #main-nav li {
     width: auto;
     padding: 0 5px;
+  }
+
+  #main-nav ul{
+    flex-direction: row;
   }
 
   .search-bar {

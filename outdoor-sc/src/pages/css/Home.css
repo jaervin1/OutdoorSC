@@ -97,6 +97,7 @@ main {
 .columns { 
   display: flex; 
   flex: 1;
+  flex-direction: column;
 }
 
 @media (min-width: 850px) {
@@ -104,5 +105,10 @@ main {
     max-width: 80%;
     margin: 15px auto;
   }
+
+  .columns {
+    flex-direction: row;
+  }
+
 }
 
