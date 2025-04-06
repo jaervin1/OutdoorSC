@@ -1,7 +1,9 @@
 import "./css/Explore.css";
 import { FaPlusCircle, FaMapMarker, FaArrowLeft } from "react-icons/fa";
 import { useState } from "react";
+
 import ActivityCard from "../components/ActivityCard";
+import Activites from "../components/Activities";
 
 
 
@@ -30,8 +32,7 @@ function Explore() {
             </section>
 
             <section className="explore">
-                <ActivityCard name="Boardwalk Loop" description="Scenic walk through one of the most unique biospheres in the state." images = {["trail-two.jpg", "trail-three.jgp"]}></ActivityCard>
-                
+                <Activites></Activites>
             </section>
 
             {isModalOpen && (
