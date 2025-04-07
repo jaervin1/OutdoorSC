@@ -1,3 +1,4 @@
+import Contact from "../components/Contact";
 import "./css/About.css"
 import { FaTwitter, FaGithub, FaInstagram } from "react-icons/fa";
 
@@ -29,7 +30,7 @@ function About() {
         </p>
         <hr />
         <h2>Contact Us</h2>
-        <p>Nothing here yet</p>
+        <Contact></Contact>
         <hr />
         <h2>Socials</h2>
         <ul class="social-list">

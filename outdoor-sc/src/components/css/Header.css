@@ -20,12 +20,44 @@ h1 {
   flex-direction: column;
 }
 
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--secondary);
+  cursor: pointer;
+  display: block;
+}
+
 @media (min-width: 850px) {
   header {
     flex-direction: row;
   }
 
+  .menu-toggle {
+    display: none;
+  }
+
   #header-content {
     flex-direction: row;
+  }
+}
+
+@media (max-width: 849px) {
+  #main-nav {
+    display: none;
+    flex-direction: column;
+    background-color: var(--primary);
+    padding: 1rem;
+    border-top: 1px solid var(--secondary);
+    z-index: 100;
+  }
+
+  #main-nav.open {
+    display: flex;
+  }
+
+  #main-nav .search-bar {
+    display: none;
   }
 }

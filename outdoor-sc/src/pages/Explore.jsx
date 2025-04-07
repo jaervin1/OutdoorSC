@@ -1,8 +1,7 @@
 import "./css/Explore.css";
-import { FaPlusCircle, FaMapMarker, FaArrowLeft } from "react-icons/fa";
+import { FaPlusCircle, FaMapMarker } from "react-icons/fa";
 import { useState } from "react";
 
-import ActivityCard from "../components/ActivityCard";
 import Activites from "../components/Activities";
 
 
@@ -16,14 +15,14 @@ function Explore() {
 
     return (
         <main id="explore-page">
-            <section class="search-container">
-                <input type="text" class="search-input" placeholder="Search" />
-                <input type="text" class="zipcode-input" placeholder="29201" />
+            <section className="search-container">
+                <input type="text" className="search-input" placeholder="Search" />
+                <input type="text" className="zipcode-input" placeholder="29201" />
                 <FaMapMarker color="#344e41" />
             </section>
 
 
-            <section class="filters">
+            <section className="filters">
                 <button>Distance</button>
                 <button>Rating (stars)</button>
                 <button>Difficulty</button>
@@ -38,7 +37,7 @@ function Explore() {
             {isModalOpen && (
                 <div id="myModal" className="modal">
                     <div className="modal-content">
-                        <button className="close" onClick={closeModal}><FaArrowLeft/></button>
+                        <span className="close" onClick={closeModal}>&times;</span>
                         <h2>Add Activity</h2>
                         <hr />
                         <div className="activity-field">
