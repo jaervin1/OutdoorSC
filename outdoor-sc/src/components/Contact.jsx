@@ -1,5 +1,4 @@
 import "./css/Contact.css"
-import {useState} from React
 import React from "react";
 
 export default function Contact() {
@@ -10,7 +9,7 @@ export default function Contact() {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+    formData.append("access_key", "8c44c7de-b368-4efc-b794-a720c7eb399b");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -29,13 +28,13 @@ export default function Contact() {
   };
 
   return (
-    <div>
+    <div id="contact-us">
       <form onSubmit={onSubmit}>
-        <input type="text" name="name" required/>
-        <input type="email" name="email" required/>
-        <textarea name="message" required></textarea>
+        <input type="text" name="name" placeholder="Name: "required/>
+        <input type="email" name="email" placeholder="Email:"required/>
+        <textarea name="message" placeholder="Message" required></textarea>
 
-        <button type="submit">Submit Form</button>
+        <button type="submit">Submit</button>
 
       </form>
       <span>{result}</span>

@@ -1,0 +1,28 @@
+#contact-us{
+  text-align: center;
+}
+
+#contact-us form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+
+form button{
+  height: 50px;
+  font-size: medium;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--header-color);
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+form input, form textarea{
+  font-size: medium;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--header-color);
+  width: 75%;
+  margin: 5px auto;
+}
