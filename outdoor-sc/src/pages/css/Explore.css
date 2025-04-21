@@ -2,23 +2,25 @@
   margin: 10px 0;
 }
 
-
 .modal {
   display: block;
   position: fixed;
   z-index: 1;
   left: 0;
-  top: 0;
+  top: 0px;
+
   width: 100%;
   height: 100%;
 }
 
 .modal-content {
   background-color: #dad7cd;
-  margin: 15% auto;
+  margin: 5% auto;
   padding: 20px;
   border: 1px solid #344e41;
-  width: 80%;
+  width: 70%;
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
 .modal-content h2 {
@@ -32,7 +34,6 @@
   font-weight: bold;
 }
 
-
 .activity-field {
   display: flex;
   background-color: var(--content-background);
@@ -44,6 +45,12 @@
 .activity-field h3 {
   padding: 5px;
   margin: 4px;
+}
+
+textarea {
+  width: 70%;
+  margin: 0;
+  padding: 0;
 }
 
 .user-input {
@@ -62,4 +69,9 @@
   border-radius: 10px;
   margin: 5px;
   text-align: right;
+}
+
+#image-preview {
+  max-width: fit-content;
+  height: auto;
 }
