@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/OutdoorSC/static/css/main.bc92340c.css",
-    "main.js": "/OutdoorSC/static/js/main.3181d26d.js",
+    "main.css": "/OutdoorSC/static/css/main.d7b95603.css",
+    "main.js": "/OutdoorSC/static/js/main.b2dd06a9.js",
     "index.html": "/OutdoorSC/index.html",
-    "main.bc92340c.css.map": "/OutdoorSC/static/css/main.bc92340c.css.map",
-    "main.3181d26d.js.map": "/OutdoorSC/static/js/main.3181d26d.js.map"
+    "main.d7b95603.css.map": "/OutdoorSC/static/css/main.d7b95603.css.map",
+    "main.b2dd06a9.js.map": "/OutdoorSC/static/js/main.b2dd06a9.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc92340c.css",
-    "static/js/main.3181d26d.js"
+    "static/css/main.d7b95603.css",
+    "static/js/main.b2dd06a9.js"
   ]
 }
