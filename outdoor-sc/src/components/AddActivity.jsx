@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./css/Modal.css"
 
 const AddActivity = (props) => {
   const [result, setResult] = useState("");

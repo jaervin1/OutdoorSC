@@ -1,0 +1,73 @@
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0px;
+
+  width: 100%;
+  height: 100%;
+}
+
+.modal-content {
+  background-color: #dad7cd;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #344e41;
+  width: 70%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-content h2 {
+  padding-top: 5px;
+}
+
+.close {
+  color: #344e41;
+  float: left;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.activity-field {
+  display: flex;
+  background-color: var(--content-background);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.activity-field h3 {
+  padding: 5px;
+  margin: 4px;
+}
+
+textarea {
+  width: 70%;
+  margin: 0;
+  padding: 0;
+}
+
+.user-input {
+  width: 70%;
+  margin: auto 0;
+}
+
+#submit-button {
+  align-items: center;
+  margin: auto auto;
+}
+
+#submit-field {
+  background-color: var(--content-background-two);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+  text-align: right;
+}
+
+#image-preview {
+  max-width: fit-content;
+  height: auto;
+}
