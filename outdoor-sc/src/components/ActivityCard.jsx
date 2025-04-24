@@ -33,8 +33,7 @@ function ActivityCard(props) {
             <img
               className="activity-image"
               src={
-                process.env.PUBLIC_URL +
-                "/images/activity-images/" +
+                "https://outdoorsc-backend.onrender.com/images/activity-images/" +
                 activity.pictures[0]
               }
               alt={activity.name}
