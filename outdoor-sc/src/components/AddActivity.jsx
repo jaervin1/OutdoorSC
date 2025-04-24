@@ -11,10 +11,13 @@ const AddActivity = (props) => {
 
   const addToServer = async (event) => {
     event.preventDefault();
-    setResult("Sending Data");
+    
 
     const formData = new FormData(event.target);
-
+    for (let [key, val] of formData.entries()) {
+      console.log(key, val);
+    }
+    setResult("Sending Data");
     const response = await fetch(
       "https://outdoorsc-backend.onrender.com/api/activities",
       {
@@ -35,7 +38,7 @@ const AddActivity = (props) => {
   };
 
   return (
-    <form id="add-activity" clssName="activity-form" onSubmit={addToServer}>
+    <form id="add-activity" className="activity-form" onSubmit={addToServer} encType="multipart/form-data" >
       <div id="myModal" className="modal">
         <div className="modal-content">
           <span className="close" onClick={props.closeAddModal}>
@@ -71,6 +74,7 @@ const AddActivity = (props) => {
               type="number"
               name="length"
               className="user-input"
+              step={0.1}
               required
             />
           </div>

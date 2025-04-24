@@ -19,6 +19,8 @@ function ActivityCard(props) {
 
   const updateActivity = (updated) => setActivity(updated);
 
+  const imageSrc = `https://outdoorsc-backend.onrender.com/images/activity-images/${activity.pictures[0]}`
+
   const setHideActivity = (shouldHide) => {
     if (shouldHide) setShowActivity(false);
   };
@@ -33,8 +35,7 @@ function ActivityCard(props) {
             <img
               className="activity-image"
               src={
-                "https://outdoorsc-backend.onrender.com/images/activity-images/" +
-                activity.pictures[0]
+                imageSrc
               }
               alt={activity.name}
             />
